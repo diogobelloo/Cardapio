@@ -175,8 +175,7 @@ checkout.addEventListener("click", function() {
         return (
             `${item.name} 
                 quantidade: ${item.quanty}
-                  Preço:${item.price} 
-                  endereço: ${andressInput.value}
+                  Preço:${item.price}
 ---------------------------------------------------------------------`
     )
     })
@@ -185,7 +184,7 @@ checkout.addEventListener("click", function() {
     console.log(cartItemContent)
     const phone = "5533998797271"
 
-    window.open(`https://wa.me/${phone}?text=${message} ` , "_link")
+    window.open(`https://wa.me/${phone}?text=${message}  Endereço: ${andressInput.value}`, "_link")
 
     cart = []
     updateCartModal()
