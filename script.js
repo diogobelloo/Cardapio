@@ -17,7 +17,7 @@ cartBtn.addEventListener('click', () => {
     if(cart.length === 0){
         return (
                         Toastify({
-                text: "Poxa... Você esqueceu de adicionar um item !",
+                text: "Poxa... Você esqueceu de adicionar um item",
                 duration: 3000,
                 close: true,
                 gravity: "top", // `top` or `bottom`
@@ -160,21 +160,7 @@ andressInput.addEventListener("input", function(event) {
 checkout.addEventListener("click", function() {
     
     const isOpen = checkedRestauranteOpen();
-         if(!isOpen){
-            Toastify({
-                text: "Ops, O restaurante está fechado",
-                duration: 3000,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "rigth", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                    background: "linear-gradient(to right, #ef4420, #ef4444)",
-                },
-                
-                }).showToast();
-          return
-    }
+       
     if(cart.length === 0) return;
 
     if(andressInput.value === ""){
